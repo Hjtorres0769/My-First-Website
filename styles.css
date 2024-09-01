@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -54,6 +58,7 @@
 
 .bg-header {
   background-image: url("assets/bg-header-1.jpg");
+  padding: var(--size-150);
 }
 
 .video-demo {
@@ -90,8 +95,14 @@
   flex: 1;
 }
 
+.why-me-wrapper .block-text {
+  padding-right: var(--size-100);
+  max-width: 35rem;
+}
+
 .block-text {
   padding-right: var(--size-50);
+  
 }
 
 .block-text span {
@@ -173,6 +184,7 @@ span.bg-color-6 {
 .video-demo .block-text h2,
 .video-demo .block-text p {
   color: var(--white);
+  margin: var(--size-50)
 }
 
 .video-btn {
@@ -216,7 +228,7 @@ span.bg-color-6 {
 .price-card {
   background-color: var(--white);
   border-radius: 8px;
-  padding: var(--size-16);
+  padding: var(--size-40) var(--size-16);
 }
 
 .price-card checked {
@@ -265,6 +277,9 @@ span.bg-color-6 {
 .plan-btn-wrapper {
   text-align-last: center;
 }
+.plan-btn-wrapper a {
+  width: 100%;
+}
 
 .testimonials {
   margin: var(--size-100) 0;
@@ -287,6 +302,7 @@ span.bg-color-6 {
 .testimonial-card {
   border: 1px solid #dedede;
   border-radius: 8px;
+  padding: var(--size-30)
 }
 
 .testimonial-card.lg {
@@ -310,8 +326,10 @@ span.bg-color-6 {
   margin-right: var(--size-20);
 }
 
-.testimonial-card.lg img.profile {
+.testimonial-card .quote {
   width: 5rem;
+  float: right;
+  margin-top: var(--size-16);
 }
 
 .top h4 {
@@ -331,4 +349,122 @@ span.bg-color-6 {
   width: 70px;
   float: right;
   margin-top: var(--size-16);
+}
+
+footer.bg-footer {
+  background-color: var(--footer);
+}
+
+
+
+footer .footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--size-50);
+  padding: var(--size-100) 0;
+}
+
+footer .footer-col {
+  justify-self: center;
+}
+
+.footer-top h5 {
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: var(--size-16);
+  font-size: var(--size-20);
+}
+
+.contact-info li {
+  margin-bottom: var(--size-20);
+  color: var(--white);
+}
+
+.contact-info li i {
+  width: var(--size-30);
+}
+
+.social-icons ul li {
+  display: inline-block;
+  margin-right: var(--size-40);
+}
+
+.social-icons ul li a {
+  color: var(--white);
+  font-size: var(--size-16);
+}
+
+.services-wrapper p {
+  color: #858497;
+}
+
+.services-wrapper h5 {
+  margin-bottom: initial;
+}
+
+.recent-posts {
+  display: flex;
+  margin-bottom: var(--size-16);
+}
+
+.recent-posts .post-image-wrapper {
+  width: var(--size-100);
+  margin-right: var(--size-10);
+}
+
+.post-inner h6 {
+  margin: 0;
+}
+
+.post-inner h6 a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.post-inner span {
+  color: var(--font-color-light);
+  font-size: var(--size-10);
+}
+
+.footer-bottom {
+  background-color: var(--footer-base);
+  padding: var(--size-16) 0;
+}
+
+.copyright p {
+  color: var(--font-color-light);
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 768px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links ul li{
+  display: inline-block;
+  margin-right: var(--size-10);
+}
+
+.footer-bottom-links ul li a {
+  color: var(--white);
+}
+
+#scrollUp {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+  color: var(--white);
+  font-size: var(--size-20);
+  height: var(--size-50);
+  width: var(--size-50);
+  line-height: var(--size-50);
+  position: fixed;
+  bottom: var(--size-30);
+  right: var(--size-30);
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
 }
