@@ -12,6 +12,22 @@ html {
   padding: var(--size-16);
 }
 
+.navbar-toggler {
+  display: block;
+    position: absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+  color: var(--white);
+  font-size: var(--size-20);
+  cursor: pointer;
+}
+
 [aria-controls="navbarDropdown"] {
   display: none;
 }
